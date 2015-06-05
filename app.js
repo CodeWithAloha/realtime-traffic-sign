@@ -6,7 +6,7 @@ io.on('connection', function() {
   console.log('??');
 });
 
-nunjucks.configure('app/views', {
+nunjucks.configure('views', {
   express: app
 });
 
