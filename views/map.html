@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <main id="map" style="width: 500px; height: 500px;"></main>
+  </body>
+
+  <script type="text/javascript"
+     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9kJfVq8OUulT5ZcDClVuk5TKwB_E7DTE"></script>
+  <script type="text/javascript">
+    function init ()  {
+      var ll = new google.maps.LatLng(21.3311748,-157.8831789);
+      var opts = {
+        center: ll,
+        zoom: 15
+      }
+      var elm = document.getElementById('map');
+      var map = new google.maps.Map(elm, opts);
+      var traffic = new google.maps.TrafficLayer();
+      traffic.setMap(map);
+    }
+    window.onload = init;
+  </script>
+</html>

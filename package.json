@@ -5,15 +5,22 @@
   "main": "index.js",
   "dependencies": {
     "browser-sync": "^2.7.5",
+    "casper": "^0.1.1",
+    "casperjs": "^1.1.0-beta3",
+    "dalekjs": "0.0.9",
     "express": "^4.12.4",
     "gulp": "^3.9.0",
     "gulp-load-plugins": "^0.10.0",
+    "node-horseman": "^1.5.1",
     "nunjucks": "^1.3.4",
-    "socket.io": "^1.3.5"
+    "pageres": "^1.4.0",
+    "phantom": "^0.7.2",
+    "socket.io": "^1.3.5",
+    "spooky": "^0.2.5"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node generateScreenshot.js"
   },
   "repository": {
     "type": "git",
